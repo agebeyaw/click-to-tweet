@@ -1,0 +1,75 @@
+input#url,input#username{
+    width: 80%;
+}
+form{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.submit{
+    display: flex;
+    flex-direction: row;
+}
+.output textarea{
+   height: 100px;
+}
+.divide{
+    margin-top: 10vh; 
+}
+.button{
+    background-color: rgb(31, 31, 255)!important;
+    box-shadow: 3px 5px 12px -2px rgba(32, 32, 255, 0.836);
+    color: white;
+}
+.result{
+    display:flex;
+    flex-direction: column;
+}
+.result{
+    display: none
+}
+/* click to tweet widget css */
+
+.click-to-tweet {
+	border: 1px solid #ddd;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 26px;
+    margin: 15px 0;
+    max-width: 1000px;
+	background-color: #fff
+}
+
+.click-to-tweet .click-to-tweet-text {
+	text-align: left;
+	font-family: museo-sans, sans-serif;
+	font-weight: 300;
+	margin-bottom: 10px
+}
+
+.click-to-tweet .click-to-tweet-text a {
+	color: #585858;
+	font-size: 26px;
+	line-height: 140%;
+	letter-spacing: .05em;
+	font-weight: 100;
+	text-decoration: none;
+	text-transform: none
+}
+
+.click-to-tweet a.click-to-tweet-btn {
+	display: block;
+	text-transform: uppercase;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 100%;
+	color: #585858;
+	float: right;
+	padding-right: 24px;
+	text-decoration: none;
+	background: url(https://lh3.googleusercontent.com/-Ki5b5kpTgEw/WKnUq50L54I/AAAAAAAAF9w/wVhrlGKuoNwZDKJ5tDaoLl9HxxC1-tpvQCLcB/h120/twitter-little-bird.png) right top no-repeat
+}
+
+
+/* click to tweet widget css */
