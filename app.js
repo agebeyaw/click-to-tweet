@@ -8,21 +8,26 @@ var tweetText = select("#tweet");
 var mainText = select(".click-to-tweet-text a");
 
 
+var userName;
+var Url;
+var TweetText;
+
 username.addEventListener("input",()=>{
-    urlGen(username.value,null,null)
+    userName = username.value
+    urlGen(userName,null,null)
 })
 
 url.addEventListener("input",()=>{
-    urlGen(null,null,url.value)
+    Url = url.value;
+    urlGen(null,null,Url)
 })
 
 tweetText.addEventListener("input",()=>{
+    TweetText = tweetText.value || "Hey! I just landed across this amazing tool, Click To tweet.";
     urlGen(null,tweetText.value,null)
 })
 
 function urlGen(User,text,URL){
-    var userName = User || "piyushsthr";
-    var TweetText = text || "Hey! I just landed across this amazing tool, Click To tweet.";
     mainText.innerText = TweetText;
     var Url  = URL || "https://piyushsuthar.codes";
     var uri = `https://twitter.com/intent/tweet?text=${TweetText}&tw_p=tweetbutton&url=${Url}&via=${userName}`
@@ -30,7 +35,6 @@ function urlGen(User,text,URL){
     var putUrl2 = select(".click-to-tweet-btn")
     putUrl.setAttribute("href",uri)
     putUrl2.setAttribute("href",uri)
-    console.log(uri)
 }
 
 function getCode(e){
@@ -54,3 +58,19 @@ function getCode(e){
         select("#html").innerText = html.innerHTML;
     })
 }
+
+
+function copy(type) {
+    /* Get the text field */
+    var copyText = document.getElementById(type);
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+  }
