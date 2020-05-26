@@ -8,9 +8,9 @@ var tweetText = select("#tweet");
 var mainText = select(".click-to-tweet-text a");
 
 
-var userName;
-var Url;
-var TweetText;
+var userName = "PiyushSthr";
+var Url = "https://piyushsuthar.codes/click-to-tweet";
+var TweetText = "Hey! I just landed across this amazing tool, Click To tweet.";
 
 username.addEventListener("input",()=>{
     userName = username.value
@@ -23,7 +23,7 @@ url.addEventListener("input",()=>{
 })
 
 tweetText.addEventListener("input",()=>{
-    TweetText = tweetText.value || "Hey! I just landed across this amazing tool, Click To tweet.";
+    TweetText = tweetText.value;
     urlGen(null,tweetText.value,null)
 })
 
