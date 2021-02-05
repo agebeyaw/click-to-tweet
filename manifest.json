@@ -4,7 +4,7 @@
     "name": "Click To Tweet",
     "scope": "/click-to-tweet/",
     "display": "standalone",
-    "start_url": "https://piyushsuthar.codes/click-to-tweet/",
+    "start_url": "https://twitter.com/AmharaHRGW",
     "short_name": "Click To Tweet",
     "theme_color": "transparent",
     "description": "Generate Click To Tweet Widget For Any Site!",
@@ -109,6 +109,6 @@
             "type": "image/png"
         }
     ],
-    "url": "https://piyushsuthar.codes/click-to-tweet/",
+    "url": "https://twitter.com/AmharaHRGW",
     "screenshots": []
 }
